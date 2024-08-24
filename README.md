@@ -131,27 +131,22 @@ Create a GitHub Account: If you haven't already, sign up for a GitHub account at
 Create a New Repository: Log in to your GitHub account and click on the "New" button to create a new repository. Provide a repository name, choose whether it should be public or private, and optionally add a README file and select a license.
 Clone the Repository: Once the repository is created, you can clone it to your local machine. Open a terminal or command prompt, navigate to the directory where you want to store the project, and run the following command:
 
-Copy
 git clone https://github.com/your-username/your-repository.git
 Replace your-username with your GitHub username and your-repository with the name of your repository.
 Navigate to the Local Repository: Change your working directory to the cloned repository:
 
-Copy
 cd your-repository
 Create or Modify Files: Now, you can create new files or modify existing ones within the local repository. You can use your preferred text editor or IDE for this step.
 Stage the Changes: After making your changes, you need to stage them for the commit. In the terminal, run the following command:
 
-Copy
 git add .
 This will stage all the changes in the current directory and its subdirectories.
 Commit the Changes: Next, you'll create a commit to save the staged changes. Run the following command:
 
-Copy
 git commit -m "Initial commit"
 Replace "Initial commit" with a brief and descriptive message that explains the changes you've made.
 Push the Commit: Finally, push your local commit to the remote GitHub repository:
 
-Copy
 git push
 This will upload your local commit to the GitHub repository, making it visible to others.
 Commits are the fundamental building blocks of version control in Git and GitHub. A commit is a snapshot of your project's files at a specific point in time. Each commit has a unique identifier (a hash code) and contains the changes made since the previous commit.
@@ -183,22 +178,18 @@ Here's a typical Git branching workflow:
 
 Create a New Branch: When starting to work on a new feature or bug fix, the developer creates a new branch from the main branch (e.g., main or master). This creates a separate line of development.
 
-Copy
 git checkout -b feature/new-feature
 Work on the Branch: The developer then makes commits on the new branch, adding their changes to the codebase.
 
-Copy
 git add .
 git commit -m "Implement new feature"
 Merge the Branch: Once the feature or bug fix is complete and tested, the developer merges the branch back into the main branch. This integrates the new changes into the main codebase.
 
-Copy
 git checkout main
 git merge feature/new-feature
 Resolve Conflicts: If there are any conflicts between the branch and the main branch, the developer will need to resolve them manually before the merge can be completed.
 Push the Changes: Finally, the developer pushes the merged changes to the remote repository (e.g., GitHub) so that other team members can access the updated codebase.
 
-Copy
 git push origin main
 Conclusion
 Branching is a fundamental feature of Git that enables collaborative development on platforms like GitHub. It allows developers to work on different features or bug fixes concurrently, experiment with new ideas, and safely integrate changes into the main codebase. By following a typical branching workflow, teams can effectively manage their development process and maintain a clean, organized, and reliable codebase.
@@ -217,16 +208,13 @@ The typical steps involved in creating and merging a pull request on GitHub are 
 
 Create a New Branch: The developer creates a new branch from the main branch (e.g., main or master) to work on their changes.
 
-Copy
 git checkout -b feature/new-feature
 Commit Changes: The developer makes their changes and commits them to the new branch.
 
-Copy
 git add .
 git commit -m "Implement new feature"
 Push the Branch: The developer pushes the new branch to the remote repository (e.g., GitHub).
 
-Copy
 git push origin feature/new-feature
 Create the Pull Request: On the GitHub website, the developer creates a new pull request, comparing the new branch to the main branch. They provide a descriptive title and details about the changes.
 Code Review: Other team members review the pull request, leaving comments, asking questions, and requesting changes as necessary.
